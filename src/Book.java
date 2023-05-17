@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public class Book implements Comparable<Book> {
-  private final  String author;
+  private final String author;
   private final String title;
   private final int pagesCount;
 
