@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -17,11 +16,13 @@ public class Main {
     ) {
       System.out.println(book);
     }
-    Collections.sort(bookList);
+    bookList.sort(new BookComparator());
     System.out.println("++++++++++++++++++++++");
     for (Book book : bookList
     ) {
       System.out.println(book);
     }
+
+
   }
 }
