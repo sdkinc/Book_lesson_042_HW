@@ -23,6 +23,13 @@ public class Main {
       System.out.println(book);
     }
 
+    bookList.sort(new BookComparatorPagesCount());
+    System.out.println("++++++++++++++++++++++");
+    for (Book book : bookList
+    ) {
+      System.out.println(book);
+    }
+
 
   }
 }

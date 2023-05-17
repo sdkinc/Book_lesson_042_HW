@@ -1,9 +1,9 @@
 import java.util.Objects;
 
 public class Book implements Comparable<Book> {
-  private String author;
-  private String title;
-  private int pagesCount;
+  private final  String author;
+  private final String title;
+  private final int pagesCount;
 
   public Book(String author, String title, int pagesCount) {
     this.author = author;
@@ -15,25 +15,16 @@ public class Book implements Comparable<Book> {
     return author;
   }
 
-  public void setAuthor(String author) {
-    this.author = author;
-  }
 
   public String getTitle() {
     return title;
   }
 
-  public void setTitle(String title) {
-    this.title = title;
-  }
 
   public int getPagesCount() {
     return pagesCount;
   }
 
-  public void setPagesCount(int pagesCount) {
-    this.pagesCount = pagesCount;
-  }
 
   @Override
   public boolean equals(Object o) {
